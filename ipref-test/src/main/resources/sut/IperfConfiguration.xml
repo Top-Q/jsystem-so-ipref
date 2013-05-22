@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sut>
+	<iperf>
+		<class>com.aqua.iperf.Iperf</class>
+		<client>
+			<class>com.aqua.iperf.IperfClient</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.0.1</host>
+	            <user edit="enable">telnet</user>
+	            <password edit="enable">aqua</password>
+            </cliConnection>
+		    <iperfExec>C:\Program Files\iperf\iperf.exe</iperfExec>        
+		    <bindHost>localhost</bindHost>
+        </client>
+		<server>
+			<class>com.aqua.iperf.IperfServer</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.0.1</host>
+	            <user edit="enable">telnet</user>
+	            <password edit="enable">aqua</password>
+	        </cliConnection>
+		    <iperfExec>C:\Program Files\iperf\iperf.exe</iperfExec>
+		    <bindHost>localhost</bindHost>
+        </server>
+        <port>7654</port>
+	</iperf>
+</sut>

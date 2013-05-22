@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sut>
+	<iperf>
+		<class>com.aqua.iperf.Iperf</class>
+		<client>
+			<class>com.aqua.iperf.IperfClient</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.0.1</host>
+	            <user edit="enable">aqua</user>
+	            <password edit="enable">aqua</password>
+            </cliConnection>
+		    <iperfExec>iperf.exe</iperfExec>            
+        </client>
+		<server>
+			<class>com.aqua.iperf.IperfServer</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.0.1</host>
+	            <user edit="enable">aqua</user>
+	            <password edit="enable">aqua</password>
+	        </cliConnection>
+		    <iperfExec>iperf.exe</iperfExec>            
+        </server>
+        <port>6000</port>
+	</iperf>
+	
+	<iperf1>
+		<class>com.aqua.iperf.Iperf</class>
+		<client>
+			<class>com.aqua.iperf.IperfClient</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.0.1</host>
+	            <user edit="enable">aqua</user>
+	            <password edit="enable">aqua</password>
+            </cliConnection>
+		    <iperfExec>iperf.exe</iperfExec>            
+        </client>
+		<server>
+			<class>com.aqua.iperf.IperfServer</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.0.1</host>
+	            <user edit="enable">aqua</user>
+	            <password edit="enable">aqua</password>
+	        </cliConnection>
+		    <iperfExec>iperf.exe</iperfExec>            
+        </server>
+        <port>7000</port>
+	</iperf1>
+	
+	<iperf2>
+		<class>com.aqua.iperf.Iperf</class>
+		<client>
+			<class>com.aqua.iperf.IperfClient</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.0.1</host>
+	            <user edit="enable">aqua</user>
+	            <password edit="enable">aqua</password>
+            </cliConnection>
+		    <iperfExec>iperf.exe</iperfExec>            
+        </client>
+		<server>
+			<class>com.aqua.iperf.IperfServer</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.0.1</host>
+	            <user edit="enable">aqua</user>
+	            <password edit="enable">aqua</password>
+	        </cliConnection>
+		    <iperfExec>iperf.exe</iperfExec>            
+        </server>
+        <port>8000</port>
+	</iperf2>
+	
+	<iperfBasicMcast>
+		<class>com.aqua.iperf.Iperf</class>
+		<client>
+			<class>com.aqua.iperf.IperfClient</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.01</host>
+	            <user edit="enable">aqua</user>
+	            <password edit="enable">aqua</password>
+            </cliConnection>
+            <iperfExec>iperf.exe</iperfExec> 
+        </client>
+		<servers index="0">
+			<class>com.aqua.iperf.IperfServer</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.0.1</host>
+	            <user edit="enable">aqua</user>
+	            <password edit="enable">aqua</password>
+	        </cliConnection>
+		    <iperfExec>iperf.exe</iperfExec>            
+        </servers>
+		<servers index="1">
+			<class>com.aqua.iperf.IperfServer</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.0.1</host>
+	            <user edit="enable">aqua</user>
+	            <password edit="enable">aqua</password>
+	        </cliConnection>
+		    <iperfExec>iperf.exe</iperfExec>            
+        </servers>
+        <port>5001</port>
+        
+	</iperfBasicMcast>
+	
+    <iperfConfiguration>
+		<class>com.aqua.iperf.Iperf</class>
+		<client>
+			<class>com.aqua.iperf.IperfClient</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.0.1</host>
+	            <user edit="enable">aqua</user>
+	            <password edit="enable">aqua</password>
+            </cliConnection>
+		    <iperfExec>iperf.exe</iperfExec>        
+		    <bindHost>localhost</bindHost>
+        </client>
+		<server>
+			<class>com.aqua.iperf.IperfServer</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.0.1</host>
+	            <user edit="enable">aqua</user>
+	            <password edit="enable">aqua</password>
+	        </cliConnection>
+		    <iperfExec>iperf.exe</iperfExec>
+		    <bindHost>localhost</bindHost>
+        </server>
+        <port>7654</port>
+	</iperfConfiguration>
+	
+	<iperfInstalled>
+		<class>com.aqua.iperf.Iperf</class>
+		<client>
+			<class>com.aqua.iperf.IperfClient</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.0.1</host>
+	            <user edit="enable">aqua</user>
+	            <password edit="enable">aqua</password>
+            </cliConnection>
+		    <iperfExec>iperf.exe</iperfExec>            
+        </client>
+		<server>
+			<class>com.aqua.iperf.IperfServer</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.0.1</host>
+	            <user edit="enable">aqua</user>
+	            <password edit="enable">aqua</password>
+	        </cliConnection>
+		    <iperfExec>iperf.exe</iperfExec>            
+        </server>
+        <port>7654</port>
+	</iperfInstalled>
+	
+	<iperfNotInstalled>
+		<class>com.aqua.iperf.Iperf</class>
+		<client>
+			<class>com.aqua.iperf.IperfClient</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.0.1</host>
+	            <user edit="enable">aqua</user>
+	            <password edit="enable">aqua</password>
+            </cliConnection>
+        </client>
+		<server>
+			<class>com.aqua.iperf.IperfServer</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.0.1</host>
+	            <user edit="enable">aqua</user>
+	            <password edit="enable">aqua</password>
+	        </cliConnection>
+        </server>
+        <port>7654</port>
+	</iperfNotInstalled>
+	
+	<iperfInstalledInWrongLocation>
+		<class>com.aqua.iperf.Iperf</class>
+		<client>
+			<class>com.aqua.iperf.IperfClient</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.0.1</host>
+	            <user edit="enable">aqua</user>
+	            <password edit="enable">aqua</password>
+            </cliConnection>
+		    <iperfExec>iperf1.exe</iperfExec>            
+        </client>
+		<server>
+			<class>com.aqua.iperf.IperfServer</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.0.1</host>
+	            <user edit="enable">aqua</user>
+	            <password edit="enable">aqua</password>
+	        </cliConnection>
+		    <iperfExec>iperf.exe</iperfExec>            
+        </server>
+        <port>7654</port>
+	</iperfInstalledInWrongLocation>
+	
+	<iperfInstalledOnClientOnly>
+		<class>com.aqua.iperf.Iperf</class>
+		<client>
+			<class>com.aqua.iperf.IperfClient</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.0.1</host>
+	            <user edit="enable">aqua</user>
+	            <password edit="enable">aqua</password>
+            </cliConnection>
+		    <iperfExec>iperf.exe</iperfExec>            
+        </client>
+		<server>
+			<class>com.aqua.iperf.IperfServer</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.0.1</host>
+	            <user edit="enable">aqua</user>
+	            <password edit="enable">aqua</password>
+	        </cliConnection>
+        </server>
+        <port>7654</port>
+	</iperfInstalledOnClientOnly>
+	
+	<iperfInstalledOnServerOnly>
+		<class>com.aqua.iperf.Iperf</class>
+		<client>
+			<class>com.aqua.iperf.IperfClient</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.0.1</host>
+	            <user edit="enable">aqua</user>
+	            <password edit="enable">aqua</password>
+            </cliConnection>
+        </client>
+		<server>
+			<class>com.aqua.iperf.IperfServer</class>
+			<cliConnection>
+	            <class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	            <host edit="enable">127.0.0.1</host>
+	            <user edit="enable">aqua</user>
+	            <password edit="enable">aqua</password>
+	        </cliConnection>
+		    <iperfExec>iperf.exe</iperfExec>            
+        </server>
+        <port>7654</port>
+	</iperfInstalledOnServerOnly>
+	
+	<cliConnection1>
+		<class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	    <host edit="enable">127.0.0.1</host>
+	    <user edit="enable">aqua</user>
+	    <password edit="enable">aqua</password>
+    </cliConnection1>
+	<cliConnection2>
+		<class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	    <host edit="enable">127.0.0.1</host>
+	    <user edit="enable">aqua</user>
+	    <password edit="enable">aqua</password>
+	</cliConnection2>
+	<cliConnection3>
+		<class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	    <host edit="enable">127.0.0.1</host>
+	    <user edit="enable">aqua</user>
+	    <password edit="enable">aqua</password>
+	</cliConnection3>
+	
+</sut>

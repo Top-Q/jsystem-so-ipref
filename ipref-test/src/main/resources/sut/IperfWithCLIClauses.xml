@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sut>
+	<cliConnection1>
+		<class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	    <host edit="enable">127.0.0.1</host>
+	    <user edit="enable">aqua</user>
+	    <password edit="enable">aqua</password>
+    </cliConnection1>
+	<cliConnection2>
+		<class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	    <host edit="enable">127.0.0.1</host>
+	    <user edit="enable">aqua</user>
+	    <password edit="enable">aqua</password>
+	</cliConnection2>
+	<cliConnection3>
+		<class>com.aqua.sysobj.conn.WindowsDefaultCliConnection</class>
+	    <host edit="enable">10.0.0.16</host>
+	    <user edit="enable">aqua</user>
+	    <password edit="enable">aqua</password>
+	</cliConnection3>
+</sut>
