@@ -1,0 +1,9 @@
+<!-- cli build script using ant 1.4 -->
+<project name="iperf" default="all" basedir=".">
+	<property name="projectName" value="iperf"/>
+	<property environment="env"/>
+	<property name="runnerRoot" value="${env.RUNNER_ROOT}"/>
+	<property name="buildFilesDir" value="${runnerRoot}/dev"/>
+	<import file="${buildFilesDir}/buildHelper.xml" />	
+</project>
+
